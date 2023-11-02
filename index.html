@@ -18,49 +18,49 @@
   </head>
 
   <body>
-    <header>
-      <div class="wrap">
+     <header>
       <div class="logo">Thinkfulbnb</div>
       <nav>
         <ul id="menu">
-          <li><a href="#stay">Stay</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#ideas">Ideas</a></li>
-          <li><a href="#host">Host</a></li>
+          <li href="#stay"><a>Stay</a></li>
+          <li href="#about"><a>About</a></li>
+          <li href="#ideas"><a>Ideas</a></li>
+          <li href="#host"><a>Host</a></li>
         </ul>
       </nav>
-      </div>
-      </div>
     </header>
 
     <main>
       <!-- Stay -->
       <section id="stay">
         <h2>Find the perfect vacation rental</h2>
+        <!-- Create a form here -->
         <form>
           <div>
-          <label for="location">Location</label>
-          <input id="location" type="text" name="location" placeholder="Search destination"/>
-
-          <label for="arrive">Arrive</label>
-          <input id="arrive" type="date" name="arrive"/>
-
-          <label for="depart">Depart</label>
-          <input id="depart" type="date" name="depart"/>
-
-          <label for="types">Type</label>
-          <select name="types" id="types" size="1">
-            <option value="apartment">Apartment</option>
-            <option value="barn">Barn</option>
-            <option value="castle">Castle</option>
-            <option value="houseboat">Houseboat</option>
-            <option value="tinyhouse">Tiny House</option>
-            <option value="yacht">Yacht</option>
-            <option value="yurt">Yurt</option>
-          </select>
-
-          <button type="button">Search</button>
+            <label for="location">Location</label>
+            <input id="location" type="text" placeholder="Search Destination" />
           </div>
+          <div>
+            <label for="arrival-date">Arrive</label>
+            <input type="date" id="arrival-date">
+          </div>
+          <div>
+            <label for="depart-date">Depart</label>
+            <input type="date" id="depart-date">
+          </div>
+          <div>
+            <label for="stay-type">Type</label>
+            <select id="">
+              <option>Apartment</option>
+              <option>Barn</option>
+              <option>Castle</option>
+              <option>Houseboat</option>
+              <option>Tiny House</option>
+              <option>Yacht</option>
+              <option>Yurt</option>
+            </select>
+          </div>
+            <button type="submit">Search</button>
         </form>
       </section>
 
