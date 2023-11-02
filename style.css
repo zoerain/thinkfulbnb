@@ -74,6 +74,9 @@ header nav ul{
 
 header nav ul li {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 ul#menu >li{
