@@ -54,6 +54,8 @@ main img {
 
 header {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   font-size: 15px;
   background-color: #ff385c;
   padding: 20px 20px 0 20px;
@@ -95,7 +97,9 @@ header nav ul li a:hover {
 }
 
 /* -------  Search Form ------- */
+
 form {
+  display: flex;
   border: 2px solid #ff385c;
   padding: 10px;
   flex-wrap: wrap;
@@ -109,8 +113,9 @@ form label {
 
 form select,
 form input {
+  float: right;
   margin-bottom: 20px;
-  width: 180px;
+  width: 65%;
 }
 
 form button {
@@ -140,11 +145,6 @@ ol#menu{
 }
 
 
-form div {
-  display: flex;
-  justify-content: space-between;
-}
-
 
 img{
   width: 100%;
@@ -163,29 +163,27 @@ img{
     font-size: 72px;
   }
 
+  form {
+    flex-direction: row;
+  }  
+  
+  .vacation-form .item {
+    display: flex block;
+    flex: 1 1 auto;
+    flex-direction: column;
+  }
+
+   .item label
+  , .item input
+  , .item select
+  , .item button {
+    display: flex;
+    width: 100%
+  }
+
   .wrap {
     flex-wrap: wrap;
     justify-content: flex-start;
-  }
-
-  form div {
-    flex-direction: row;
-    width: 15%;
-  }
-
-  form{
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-  }
-
-  form button {
-    width: 20%;
-  }
-
-  form div input, form div select {
-    width: 95%;
-    font-size: 90%;
   }
 
   .row{
