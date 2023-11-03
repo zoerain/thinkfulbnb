@@ -155,12 +155,17 @@ img{
 @media all and (min-width: 768px){
   header{
     display: flex;
+    flex-wrap: nonwrap;
+
     justify-content: space-between;
     align-items: center;
   }
 
   .logo {
-    font-size: 72px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    font-size: 50px;
   }
 
   form {
