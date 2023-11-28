@@ -89,7 +89,6 @@ font-weight: bold;
 }
 form select,
 form input {
-float: right;
 margin-bottom: 20px;
 width: 65%;
 }
